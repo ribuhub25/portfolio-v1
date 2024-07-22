@@ -1,20 +1,25 @@
 @use "../../styles/variables/typography.scss" as typo;
 .container {
   padding-top: 5vh;
+  padding-left: 5vh;
+  .div-flex{
+    padding-top: 4vh;
+  }
   .div-section {
     display: flex;
     gap: 4vw;
     .div-title {
-      max-width: 25vw;
+      width: 25vw;
       mat-list-item {
         [matListItemTitle] {
           display: flex;
           gap: 0.5vw;
+          font-weight: bold;
         }
       }
     }
     [matListItemLine] {
-      max-width: 22vw;
+      max-width: 21vw;
       .saber-mas {
         color: #005cbb;
         font-size: medium;
