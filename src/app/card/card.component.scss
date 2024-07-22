@@ -1,0 +1,47 @@
+mat-card {
+  width: 50vw;
+  margin: auto;
+}
+.example-card {
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  padding-top: 2vh;
+  padding-bottom: 1vh;
+  border: none;
+  .div-flex {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      .div-info {
+        width: 100vw;
+        text-align: left;
+        .div-card-header {
+          display: flex;
+          flex-direction: column;
+          gap: 1vh;
+          .div-tags {
+            display: flex;
+            flex-direction: row;
+            gap: 2vh;
+            .tag {
+              color: var(--color-text);
+            }
+          }
+        }
+      }
+      .div-img {
+        text-align: center;
+        &__foto {
+          border-radius: 5vh;
+          width: 40vw;
+          transform: rotate(3deg);
+        }
+        &__project {
+          border-radius: 5vh;
+          width: 80vw;
+        }
+      }
+    }
+}
+
+

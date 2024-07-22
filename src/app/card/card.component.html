@@ -1,0 +1,49 @@
+<mat-card class="example-card" appearance="outlined">
+  <div class="div-flex">
+    <div class="div-info">
+      <mat-card-content>
+        <mat-card-header>
+          <div class="div-card-header">
+            <div>
+              @if (value.imgUri !== "assets/images/perfil.jpg") {
+              <mat-card-title>{{ value.title }}</mat-card-title>
+              }
+            </div>
+            <div class="div-tags">
+              @for (tag of value.tags; track $index) {
+              <mat-card-subtitle class="tag">{{ tag }}</mat-card-subtitle>
+              }
+            </div>
+            <p>
+              {{ value.description }}
+            </p>
+          </div>
+        </mat-card-header>
+        @if(value.imgUri !== "assets/images/perfil.jpg") {
+        <mat-card-actions>
+          <a mat-button href={{value.githubUri}}>CODE</a>
+          <a mat-button href={{value.projectUri}}>PREVIEW</a>
+        </mat-card-actions>
+        }
+      </mat-card-content>
+    </div>
+    <div class="div-img">
+      @if (value.imgUri !== "assets/images/perfil.jpg") {
+      <img
+        mat-card-image
+        src="{{ value.imgUri }}"
+        alt="{{ value.title }}"
+        class="div-img__project"
+        width="450"
+      />
+      }@else {
+      <img
+        mat-card-image
+        src="{{ value.imgUri }}"
+        alt="{{ value.title }}"
+        class="div-img__foto"
+      />
+      }
+    </div>
+  </div>
+</mat-card>

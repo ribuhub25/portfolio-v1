@@ -1,0 +1,117 @@
+<div class="container">
+  <div class="div-navbar">
+    <app-navbar></app-navbar>
+  </div>
+  <div class="div-header">
+    <mat-card class="example-card" appearance="outlined">
+      <div
+        class="div-flex"
+        style="
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+          align-items: center;
+          margin: auto;
+          align-items: center;
+        "
+      >
+        <div class="div-info" >
+          <mat-card-header>
+            <div class="flex-card-header">
+              <div mat-card-avatar class="example-header-image"></div>
+              <a
+                href="https://linkedin.com/in/jhoribu25"
+                style="text-decoration: none"
+              >
+                <div
+                  class="flex-card-header__btn-job"
+                  style="background-color: var(--color-bg)"
+                >
+                  Disponible para trabajar
+                </div>
+              </a>
+            </div>
+            <div>
+              <mat-card-title>Hey, Soy Jhonatan Riquelme</mat-card-title>
+            </div>
+          </mat-card-header>
+
+          <mat-card-content>
+            <p>
+              +1 año de experiencia.<b
+                >Estudiante de Ingeniería de Sistemas en la Universidad Nacional
+                de Ingeniería.</b
+              >
+              De Lima, Perú. Especializado en el desarrollo de aplicaciones web.
+            </p>
+          </mat-card-content>
+          <mat-card-actions>
+            <a mat-button href="mailto:jhonatanribu25@gmail.com">Contáctame</a>
+            <a mat-button href="https://linkedin.com/in/jhoribu25">Linkedin</a>
+          </mat-card-actions>
+        </div>
+        <div class="div-img">
+        <object data="assets/icons/merge-2.svg" style="width: 15vw;"></object>
+        </div>
+
+      </div>
+    </mat-card>
+  </div>
+
+  <div class="div-section" id="experiencia">
+    <div class="div-section__title">
+      <span>
+        <mat-icon
+          aria-hidden="true"
+          aria-label="Example work"
+          fontIcon="work"
+        ></mat-icon>
+      </span>
+      Experiencia laboral
+    </div>
+    <app-experience />
+  </div>
+  <div class="div-section" id="proyectos">
+    <div class="div-section__title">
+      <span>
+        <mat-icon
+          aria-hidden="true"
+          aria-label="Example code"
+          fontIcon="code"
+        ></mat-icon>
+      </span>
+      Proyectos
+    </div>
+      <app-proyectos />
+  </div>
+  <div class="div-section" id="sobre-mi">
+    <div class="div-section__title">
+      <span>
+        <mat-icon
+          aria-hidden="true"
+          aria-label="Example code"
+          fontIcon="person_check"
+        ></mat-icon>
+      </span>
+      Sobre mí
+    </div>
+    <app-sobre-mi />
+  </div>
+  <div style="padding: 2%; color: var(--color-text); justify-content: center">
+    <div style="display: flex; gap: 30%">
+      <div>© 2024 jhoribu25. Casi todos los derechos reservados</div>
+      <div style="display: flex; gap: 5vh">
+        <a
+          href="#sobre-mi"
+          style="text-decoration: none; color: var(--color-text)"
+          ><div>Sobre Mi</div></a
+        >
+        <a
+          href="mailto:jhonatanribu25@gmail.com"
+          style="text-decoration: none; color: var(--color-text)"
+          ><div>Contacto</div></a
+        >
+      </div>
+    </div>
+  </div>
+</div>

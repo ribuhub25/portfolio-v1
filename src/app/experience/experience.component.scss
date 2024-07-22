@@ -1,0 +1,61 @@
+@use "../../styles/variables/typography.scss" as typo;
+.container {
+  padding-top: 5vh;
+  .div-section {
+    display: flex;
+    gap: 4vw;
+    .div-title {
+      max-width: 25vw;
+      mat-list-item {
+        [matListItemTitle] {
+          display: flex;
+          gap: 0.5vw;
+        }
+      }
+    }
+    [matListItemLine] {
+      max-width: 22vw;
+      .saber-mas {
+        color: #005cbb;
+        font-size: medium;
+      }
+    }
+  }
+}
+
+// .container {
+//   mat-list-item {
+//     margin-bottom: 20px;
+//     .flexcard {
+//       display: flex;
+//       flex-direction: row;
+//       max-width: 80vw;
+//       gap: 2vw;
+//       mat-icon {
+//         display: block;
+//       }
+//       &__project {
+//         max-width: 20vw;
+//         white-space: normal;
+
+//       }
+//       &__description {
+//         max-width: 60vw;
+//         text-align: left;
+//         white-space: normal;
+
+//       }
+//     }
+//     .saber-mas {
+//       color: #8849ff;
+//       font-size: medium;
+//     }
+//     [matListItemTitle] {
+//       font-family: typo.$main-family-bold;
+//       color: var(--color-text);
+//     }
+//     [matListItemLine]{
+//       color: var(--color-text);
+//     }
+//   }
+// }

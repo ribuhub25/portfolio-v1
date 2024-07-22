@@ -1,0 +1,114 @@
+@use "variables/typography.scss" as typo;
+@import "_fonts.scss";
+@import "_styles.scss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --color-text: #222;
+  --color-bg: #fff;
+  --color-bg-nav: #28255a;
+  --color-text-navlink: rgb(114, 99, 134);
+  --tipo-principal: typo.$main-family;
+  --color-btn-job: #005cbb;
+  --color-bg-btn-job: #22269e;
+  --color-bg-hover: #22269e;
+}
+
+[data-theme="dark"] {
+  --color-text: white;
+  --color-bg: rgba(20, 23, 44, 255);
+  --color-bg-nav: rgb(140, 140, 148);
+  --color-text-navlink: rgb(33, 19, 51);
+  --color-btn-job: #005cbb;
+  --color-bg-btn-job: #005cbb;
+  --color-bg-hover: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+img,
+picture,
+video,
+iframe,
+figure {
+  max-width: 100%;
+  width: 100%;
+  display: block; //evita el espaciado en las imagenes por defecto
+  /*opcional */
+  object-fit: cover;
+  /*opcional */
+  object-position: center center;
+}
+
+a {
+  display: block;
+}
+
+p a {
+  display: inline;
+}
+
+li {
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+strong,
+blockquote,
+i,
+b,
+u,
+em {
+  font-size: 1em;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+svg {
+  width: 100%;
+  display: block;
+  fill: currentColor;
+}
+::selection {
+  background-color: #222;
+  color: #fff;
+}
+
+body {
+  min-height: 100vh;
+  font-size: clamp(1rem, 20vw, 2rem);
+  font-family: var(--tipo-principal);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: var(--color-text);
+  }
+}
+
+// @media screen and (min-width: 480px) and (max-width: 960px) {
+//   .material-icons {
+//     font-size: 10px;
+//   }
+// }

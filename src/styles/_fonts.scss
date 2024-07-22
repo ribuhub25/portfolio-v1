@@ -1,0 +1,55 @@
+@use "variables/typography.scss" as type;
+@font-face {
+  font-family: type.$main-family-black;
+  src: url('../../public/assets/fonts/Onest-Black.ttf')format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: type.$main-family-bold;
+  src: url('../../public/assets/fonts/Onest-Bold.ttf')format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: type.$main-family-extrabold;
+  src: url('../../public/assets/fonts/Onest-ExtraBold.ttf')format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: type.$main-family-extralight;
+  src: url('../../public/assets/fonts/Onest-ExtraLight.ttf')format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: type.$main-family-light;
+  src: url('../../public/assets/fonts/Onest-Light.ttf')format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: type.$main-family-medium;
+  src: url('../../public/assets/fonts/Onest-Medium.ttf')format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: type.$main-family-regular;
+  src: url('../../public/assets/fonts/Onest-Regular.ttf')format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: type.$main-family-semibold;
+  src: url('../../public/assets/fonts/Onest-SemiBold.ttf')format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: type.$main-family-thin;
+  src: url('../../public/assets/fonts/Onest-Thin.ttf')format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
