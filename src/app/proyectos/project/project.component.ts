@@ -31,5 +31,14 @@ export class ProjectComponent {
       projectUri: 'https://cantorohome.netlify.app',
       githubUri: 'https://github.com/ribuhub25/TiendaVirtual',
     },
+    {
+      title: 'TORTELIN APP',
+      description:
+        'Proyecto realizado con Angular 18 con el uso de standalone components.',
+      imgUri: 'assets/images/cantoro.webp',
+      tags: ['Angular', 'Boostrap', 'ecommerce'],
+      projectUri: 'https://torteliniapp.netlify.app',
+      githubUri: 'https://github.com/ribuhub25/landingPageTortelin',
+    },
   ];
 }
