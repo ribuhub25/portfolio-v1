@@ -35,7 +35,7 @@ export class ProjectComponent {
       title: 'TORTELIN APP',
       description:
         'Proyecto realizado con Angular 18 con el uso de standalone components.',
-      imgUri: 'assets/images/cantoro.webp',
+      imgUri: 'assets/images/torteliniapp.webp',
       tags: ['Angular', 'Boostrap', 'ecommerce'],
       projectUri: 'https://torteliniapp.netlify.app',
       githubUri: 'https://github.com/ribuhub25/landingPageTortelin',
