@@ -2,8 +2,9 @@ import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
-import { IProject } from '../models/project';
-import { ISobreMi } from '../models/sobreMi';
+import { IProject } from '../../models/project';
+import { ISobreMi } from '../../models/sobreMi';
+
 
 @Component({
   selector: 'app-card',

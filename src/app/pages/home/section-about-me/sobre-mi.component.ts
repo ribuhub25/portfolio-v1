@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { CardComponent } from '../card/card.component';
-import { ISobreMi } from '../models/sobreMi';
+import { ISobreMi } from '../../../models/sobreMi';
+import { CardComponent } from '../../../components/card/card.component';
 
 @Component({
   selector: 'app-sobre-mi',

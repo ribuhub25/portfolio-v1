@@ -1,32 +1,26 @@
 import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { MatIcon } from '@angular/material/icon';
-import { MatFabButton, MatFabAnchor } from '@angular/material/button';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
-
 import { RouterOutlet } from '@angular/router';
-import { NavbarComponent } from './navbar/navbar.component';
-import { ExperienceComponent } from './experience/experience.component';
-import { ProyectosModule } from './proyectos/proyectos.module';
-import { SobreMiComponent } from './sobre-mi/sobre-mi.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { SobreMiComponent } from './pages/home/section-about-me/sobre-mi.component';
 import { CommonModule } from '@angular/common';
-
+import { ExperienceComponent } from './pages/home/section-experience/experience.component';
+import { SectionPresentationComponent } from './pages/home/section-presentation/section-presentation.component';
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [
-    RouterOutlet,
     MatIcon,
-    MatFabButton,
-    MatFabAnchor,
     MatButtonModule,
     MatCardModule,
     NavbarComponent,
     ExperienceComponent,
-    ProyectosModule,
     SobreMiComponent,
     CommonModule,
-  ],
+    SectionPresentationComponent
+],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
