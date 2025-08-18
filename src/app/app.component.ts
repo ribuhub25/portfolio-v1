@@ -6,7 +6,7 @@ import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { SobreMiComponent } from './pages/home/section-about-me/sobre-mi.component';
 import { CommonModule } from '@angular/common';
-import { ExperienceComponent } from './pages/home/section-experience/experience.component';
+import { SectionProjectsComponent } from './pages/home/section-projects/section-projects.component';
 import { SectionPresentationComponent } from './pages/home/section-presentation/section-presentation.component';
 @Component({
   selector: 'app-root',
@@ -16,9 +16,9 @@ import { SectionPresentationComponent } from './pages/home/section-presentation/
     MatButtonModule,
     MatCardModule,
     NavbarComponent,
-    ExperienceComponent,
     SobreMiComponent,
     CommonModule,
+    SectionProjectsComponent,
     SectionPresentationComponent
 ],
   templateUrl: './app.component.html',

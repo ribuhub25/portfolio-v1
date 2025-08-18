@@ -1,3 +1,15 @@
-@for (project of LIST_PROJECTS; track $index) {
-  <app-card [value]="project"/>
-}
+<div class="section" id="proyectos">
+  <div class="section__title">
+    <span>
+      <mat-icon
+        aria-hidden="true"
+        aria-label="Example code"
+        fontIcon="code"
+      ></mat-icon>
+    </span>
+    Proyectos
+  </div>
+  @for (project of LIST_PROJECTS; track $index) {
+    <app-card [value]="project"/>
+  }
+</div>

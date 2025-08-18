@@ -1,34 +1,47 @@
-.example-card {
-  padding-top: 2vh;
-  padding-bottom: 1vh;
-  .div-flex {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 3vh;
-    margin: auto;
-    align-items: center;
-    .div-info {
-      width: 40%;
-      text-align: left;
-      .div-card-header {
-        display: flex;
-        flex-direction: column;
-        gap: 1vh;
-        .div-tags {
-          display: flex;
-          flex-direction: row;
-          gap: 2vh;
-        }
-      }
+@use "../../../../styles/variables/typography.scss" as typo;
+
+.section {
+    max-width: 1400px; //Mantener el tamaño cuando Aumenta/Disminuye 
+    margin: 0 auto; //Centrar Contenido
+    align-items: center; //Alinear Items dentro
+    padding-top: 3vh;
+    &__title {
+      font-size: xx-large;
+      font-family: typo.$main-family-extrabold;
     }
-    .div-img {
-      width: 50%;
-      img {
-        border-radius: 5vh;
-        width: 80%;
-      }
-    }
-  }
 }
+
+// .example-card {
+//   padding-top: 2vh;
+//   padding-bottom: 1vh;
+//   .div-flex {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: flex-end;
+//     align-items: center;
+//     gap: 3vh;
+//     margin: auto;
+//     align-items: center;
+//     .div-info {
+//       width: 40%;
+//       text-align: left;
+//       .div-card-header {
+//         display: flex;
+//         flex-direction: column;
+//         gap: 1vh;
+//         .div-tags {
+//           display: flex;
+//           flex-direction: row;
+//           gap: 2vh;
+//         }
+//       }
+//     }
+//     .div-img {
+//       width: 50%;
+//       img {
+//         border-radius: 5vh;
+//         width: 80%;
+//       }
+//     }
+//   }
+// }

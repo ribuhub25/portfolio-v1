@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { CardComponent } from '../../../components/card/card.component';
 import { CommonModule } from '@angular/common';
 import { IProject } from '../../../models/project';
+import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'app-section-projects',
   standalone: true,
-  imports: [CardComponent, CommonModule],
+  imports: [CardComponent, CommonModule, MatIconModule],
   templateUrl: './section-projects.component.html',
   styleUrl: './section-projects.component.scss'
 })
