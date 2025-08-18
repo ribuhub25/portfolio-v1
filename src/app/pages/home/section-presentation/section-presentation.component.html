@@ -1,42 +1,34 @@
-<mat-card class="example-card" appearance="outlined">
-  <div class="div-flex" style="
-          display: flex;
-          flex-direction: row;
-          justify-content: flex-end;
-          align-items: center;
-          margin: auto;
-          align-items: center;
-        ">
-    <div class="div-info">
+<mat-card appearance="outlined">
+  <div class="container">
+    <div class="container__info">
       <mat-card-header>
         <div class="flex-card-header">
           <div mat-card-avatar class="example-header-image"></div>
-          <a href="https://linkedin.com/in/jhoribu25" style="text-decoration: none">
+          <a href="{{linkedin}}" style="text-decoration: none">
             <div class="flex-card-header__btn-job" style="background-color: var(--color-bg)">
               Disponible para trabajar
             </div>
           </a>
         </div>
         <div>
-          <mat-card-title>Hey, Soy Jhonatan Riquelme</mat-card-title>
+          <mat-card-title>Hey, Soy {{shortname}}</mat-card-title>
         </div>
       </mat-card-header>
 
       <mat-card-content>
-        <p>
-          +1 año de experiencia.<b>Estudiante de Ingeniería de Sistemas en la Universidad Nacional
-            de Ingeniería.</b>
-          De Lima, Perú. Especializado en el desarrollo de aplicaciones web.
+        <p>+ {{years_experience}} {{(years_experience == 1 ? "año": "años" )}} de experiencia. De {{city}}, {{country}}.
+          <br>{{grade}} de {{career}} en la {{university}}.
+          <br>Especializado en el {{speciality}}.
         </p>
       </mat-card-content>
+
       <mat-card-actions>
-        <a mat-button href="mailto:jhonatanribu25@gmail.com">Contáctame</a>
-        <a mat-button href="https://linkedin.com/in/jhoribu25">Linkedin</a>
+        <a mat-button href="mailto:{{email}}">Contáctame</a>
+        <a mat-button href="{{linkedin}}">Linkedin</a>
       </mat-card-actions>
     </div>
-    <div class="div-img">
-      <object data="assets/icons/merge-2.svg" style="width: 15vw;"></object>
+    <div class="container__img">
+      <object data="assets/icons/merge-2.svg"></object>
     </div>
-
   </div>
 </mat-card>
