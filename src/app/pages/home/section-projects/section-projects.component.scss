@@ -6,6 +6,7 @@
     align-items: center; //Alinear Items dentro
     padding-top: 3vh;
     &__title {
+      padding-bottom: 3vh;
       font-size: xx-large;
       font-family: typo.$main-family-extrabold;
     }

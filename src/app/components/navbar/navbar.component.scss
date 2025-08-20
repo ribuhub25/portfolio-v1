@@ -10,3 +10,8 @@
   background-color: var(--color-bg-nav);
   color: var(--color-text-navlink);
 }
+@media screen and (max-width: 767px) {
+  .mat-toolbar {
+    font-size: xx-small;
+  }
+}

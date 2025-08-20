@@ -20,3 +20,26 @@
         }
     }
 }
+
+@media screen and (max-width: 767px) {
+  .footer{
+    margin: 0 auto; //Centrar Contenido
+    align-items: center; //Alinear Items dentro
+    color: var(--color-text);
+    &__content {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        text-align: center;
+        gap: 10px;
+        &__links {
+            display: flex;
+            justify-content: space-between;
+            a {
+                text-decoration: none;
+                color: var(--color-text);
+            }
+        }
+    }
+  }
+}

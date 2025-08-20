@@ -6,11 +6,11 @@ mat-card {
     max-width: 1400px; //Mantener el tamaño cuando Aumenta/Disminuye 
     margin: 0 auto; //Centrar Contenido
     align-items: center; //Alinear Items dentro
+
     .container {
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
-        align-items: center;     
         align-items: center;
 
         &__info {
@@ -81,11 +81,38 @@ mat-card {
         }
 
         &__img {
-            object{
-                width: 100%; 
+            object {
+                width: 100%;
                 height: auto;
             }
         }
     }
+}
 
+@media screen and (max-width: 767px) {
+    .container {
+        display: block;
+        &__info {
+            mat-card-header {
+                padding: 1vh 2vh;
+                .flex-card-header { 
+                    &__btn-job {
+                        font-size: 11px !important;
+                    }
+                 }
+                mat-card-title {
+                    font-family: typo.$main-family-extrabold;
+                    font-size: x-large !important;
+                    --tw-text-opacity: 1;
+                    color: var(--color-text);
+                }
+            }
+            mat-card-actions {
+                justify-content: center;
+            }
+        }
+        &__img {
+            display: none;
+        }
+    }
 }

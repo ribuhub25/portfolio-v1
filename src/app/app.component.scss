@@ -6,24 +6,19 @@
   padding-right: 15%;
   background-color: var(--color-bg);
   color: var(--color-text);
-  .div-header {
-    padding-bottom: 3vh;
-  }
-  .div-section {
-    padding-top: 3vh;
-    width: 50vw;
-    margin: auto;
-    scroll-margin-top: 8vh;
-    &__title {
-      font-size: xx-large;
-      font-family: typo.$main-family-extrabold;
-    }
-  }
 }
 
 @media screen and (min-width: 960px) and (max-width: 1328px) {
   .container{
     margin: auto;
   }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  
 }
 

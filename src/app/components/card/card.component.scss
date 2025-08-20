@@ -4,7 +4,7 @@ mat-card {
 .example-card {
   color: var(--color-text);
   background-color: var(--color-bg);
-  padding-top: 2vh;
+  //padding-top: 2vh;
   padding-bottom: 1vh;
   border: none;
   .div-flex {
@@ -42,4 +42,23 @@ mat-card {
   }
 }
 
-
+@media screen and (max-width: 767px) {
+  .example-card {
+    .div-flex {
+      padding-top: 20px;
+      flex-direction: column-reverse;
+      .div-info {
+        width: 100%;
+        mat-card-header{
+          padding: 0;
+        }
+      }
+      .div-img {
+        width: 100%;
+      }
+    }
+  }
+  mat-card-actions{
+    justify-content: center;
+  }
+}
