@@ -1,12 +1,8 @@
 import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
-import { RouterOutlet } from '@angular/router';
-import { NavbarComponent } from './components/navbar/navbar.component';
+import { RouterModule, RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { SectionProjectsComponent } from './pages/home/section-projects/section-projects.component';
-import { SectionPresentationComponent } from './pages/home/section-presentation/section-presentation.component';
-import { SobreMiComponent } from "./pages/home/section-about-me/section-aboutme.component";
 import { FooterComponent } from "./components/footer/footer.component";
 @Component({
   selector: 'app-root',
@@ -14,11 +10,9 @@ import { FooterComponent } from "./components/footer/footer.component";
   imports: [
     MatButtonModule,
     MatCardModule,
-    NavbarComponent,
     CommonModule,
-    SectionProjectsComponent,
-    SectionPresentationComponent,
-    SobreMiComponent,
+    RouterOutlet,
+    RouterModule,
     FooterComponent
 ],
   templateUrl: './app.component.html',
