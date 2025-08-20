@@ -20,10 +20,5 @@ export class CardComponent {
     tags: [],
     imgUri: ''
   };
-  sobreMi: ISobreMi = {
-    title: '',
-    description: '',
-    imgUri: ''
-  };
   @Input() value = this.project;
 }

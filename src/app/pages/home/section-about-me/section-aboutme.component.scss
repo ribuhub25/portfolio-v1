@@ -1,0 +1,15 @@
+@use "../../../../styles/variables/typography.scss" as typo;
+.container{
+  padding-top: 3vh;
+}
+
+.section {
+    max-width: 1400px; //Mantener el tamaño cuando Aumenta/Disminuye 
+    margin: 0 auto; //Centrar Contenido
+    align-items: center; //Alinear Items dentro
+    padding-top: 3vh;
+    &__title {
+      font-size: xx-large;
+      font-family: typo.$main-family-extrabold;
+    }
+}
