@@ -29,13 +29,15 @@
     </div>
     <div class="div-img">
       @if (value.imgUri !== "assets/images/perfil.jpg") {
-      <img
+      <a href="/projects/{{value.title.replace(' ','_').toLocaleLowerCase()}}">
+        <img
         mat-card-image
         src="{{ value.imgUri }}"
         alt="{{ value.title }}"
         class="div-img__project"
         style="width: 100%; height: auto;display: block;"
       />
+      </a>
       }@else {
       <img
         mat-card-image

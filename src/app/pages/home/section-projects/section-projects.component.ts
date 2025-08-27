@@ -13,6 +13,7 @@ import { MatIconModule } from '@angular/material/icon';
 })
 export class SectionProjectsComponent {
     LIST_PROJECTS: IProject[] = [
+      
       {
         title: 'KEY MG',
         description:
