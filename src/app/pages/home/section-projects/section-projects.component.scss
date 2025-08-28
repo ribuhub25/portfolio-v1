@@ -1,48 +1,39 @@
 @use "../../../../styles/variables/typography.scss" as typo;
 
 .section {
-    max-width: 1400px; //Mantener el tamaño cuando Aumenta/Disminuye 
-    margin: 0 auto; //Centrar Contenido
-    align-items: center; //Alinear Items dentro
-    padding-top: 3vh;
-    &__title {
-      padding-bottom: 3vh;
-      font-size: xx-large;
-      font-family: typo.$main-family-extrabold;
-    }
-}
+  max-width: 1400px; //Mantener el tamaño cuando Aumenta/Disminuye 
+  margin: 0 auto; //Centrar Contenido
+  align-items: center; //Alinear Items dentro
+  padding-top: 3vh;
 
-// .example-card {
-//   padding-top: 2vh;
-//   padding-bottom: 1vh;
-//   .div-flex {
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: flex-end;
-//     align-items: center;
-//     gap: 3vh;
-//     margin: auto;
-//     align-items: center;
-//     .div-info {
-//       width: 40%;
-//       text-align: left;
-//       .div-card-header {
-//         display: flex;
-//         flex-direction: column;
-//         gap: 1vh;
-//         .div-tags {
-//           display: flex;
-//           flex-direction: row;
-//           gap: 2vh;
-//         }
-//       }
-//     }
-//     .div-img {
-//       width: 50%;
-//       img {
-//         border-radius: 5vh;
-//         width: 80%;
-//       }
-//     }
-//   }
-// }
+  .presentation {
+    position: relative;
+    background-position: center center;
+    h1{
+        font-size: 3rem;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        text-align: center;
+        font-weight: 800;
+        padding-bottom: 4rem;
+    }
+    &__content {
+      padding: 10rem 0 17rem 0;
+      max-width: 90rem;
+      width: 92%;
+      margin: auto;
+    }
+    
+    &__info {
+      text-align: center;
+
+      p {
+        font-size: 1.2rem;
+        text-align: center;
+        width: 100%;
+        line-height: 1.6;
+      }
+    }
+  }
+
+}

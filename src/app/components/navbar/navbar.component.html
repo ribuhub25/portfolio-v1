@@ -1,5 +1,5 @@
 <mat-toolbar class="mat-toolbar">
-  <a href="/">
+  <a [routerLink]="['/']">
     <div class="header__logo-container">
       <div class="header__logo-img-cont">
         <img src="assets/images/perfil.jpg" alt="Jhonatan Riquelme Logo Image" class="header__logo-img">
@@ -9,10 +9,10 @@
   </a>
   <span class="nav-spacer"></span>
   <li class="nav-item">
-    <a class="nav-link" href="/projects">Proyectos</a>
+    <a class="nav-link" [routerLink]="['/projects']">Proyectos</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="/#sobre-mi">Sobre mí</a> 
+    <a class="nav-link" [routerLink]="['/#sobre-mi']">Sobre mí</a>
   </li>
   <li class="nav-item">
     <a class="nav-link" href="mailto:jhonatanribu25@gmail.com">Contacto</a>

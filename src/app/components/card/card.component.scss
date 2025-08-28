@@ -10,9 +10,10 @@ mat-card {
   .div-flex {
       display: flex;
       flex-direction: row;
-      align-items: center;
+      gap: 20px;
+      justify-content: center;
       .div-info {
-        width: 60%;
+        width: 40%;
         text-align: left;
         .div-card-header {
           display: flex;
@@ -30,7 +31,15 @@ mat-card {
       }
       .div-img {
         width: 40%;
-        text-align: center;
+        text-align: -webkit-right;
+        img{
+          width: 100%;
+          height: auto;
+          object-fit: cover;
+          aspect-ratio: 3 / 2; /* Opcional: mantiene proporción */
+          max-width: 500px;    /* Controla el tamaño máximo */
+          display: block;
+        }
         &__foto {
           border-radius: 20px;
           transform: rotate(3deg);

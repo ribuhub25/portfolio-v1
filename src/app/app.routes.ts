@@ -10,4 +10,9 @@ export const routes: Routes = [
         path: "projects",
         loadChildren: () => import("./pages/projects/projects.routes").then(m => m.routes)
     },
+    {
+        path: "**",
+        redirectTo: "",
+        pathMatch: "full"
+    }
 ];

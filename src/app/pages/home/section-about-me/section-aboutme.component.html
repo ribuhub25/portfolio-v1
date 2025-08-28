@@ -1,15 +1,20 @@
-<div class="section" id="sobre-mi">
-  <div class="section__title">
-    <span>
-      <mat-icon
-        aria-hidden="true"
-        aria-label="Example code"
-        fontIcon="person_check"
-      ></mat-icon>
-    </span>
-    Sobre mí
+<section class="presentation">
+  <div class="presentation__content">
+    <h1>Sobre mí</h1>
+    <div class="presentation__info">
+      <div class="container">
+        <div>
+          <h4>Conóceme</h4>
+          <p>{{ infoPersonal.description }}</p>
+          <a href="/" mat-flat-button target="_blank">CONTÁCTAME</a>
+        </div>
+        <div>
+          <h4>Mis Skills</h4>
+          @for(skill of infoPersonal.skills; track $index ){
+          <mat-chip style="margin: 5px 5px;">{{ skill }}</mat-chip>
+          }
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="container">
-    <app-card [value]="infoPersonal" />
-  </div>
-</div>
+</section>

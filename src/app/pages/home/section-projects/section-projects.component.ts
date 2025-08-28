@@ -17,7 +17,7 @@ export class SectionProjectsComponent {
       {
         title: 'KEY MG',
         description:
-          'Key MG es un proyecto de innovación realizado en Python que busca canciones que combinen armónicamente con una canción seleccionada previamente. El fin del proyecto fue automatizar la busqueda creativa que tiene un DJ al momento de armar sus sets de canciones. ',
+          'Key MG es un proyecto de innovación que busca canciones que combinen armónicamente según la teoria musical.',
         longDescription:
           'Key MG es un proyecto de innovación realizado en Python que busca canciones que combinen armónicamente con una canción seleccionada previamente. El fin del proyecto fue automatizar la busqueda creativa que tiene un DJ al momento de armar sus sets de canciones.',
         imgUri: 'assets/images/keyMG.webp',
@@ -29,7 +29,7 @@ export class SectionProjectsComponent {
       {
         title: 'CANTOR HOME',
         description:
-          'Cantor Home es un proyecto realizado con React JS que consume un backend de prueba en PHP, la idea fue construir un sitio web para una empresa que comercializa muebles de melamina.',
+          'Cantor Home es un ecommerce para la venta de muebles de melamina.',
         longDescription:
           'Cantor Home es un proyecto realizado con React JS que consume un backend de prueba en PHP, la idea fue construir un sitio web para una empresa que comercializa muebles de melamina.',
         imgUri: 'assets/images/cantoro.webp',
@@ -40,7 +40,7 @@ export class SectionProjectsComponent {
       {
         title: 'TORTELIN APP',
         description:
-          'Proyecto realizado con Angular 18 con el uso de standalone components.',
+          'Tortelin App es un ecommerce para la venta de tortas para una pastelería',
         longDescription:
           'Proyecto realizado con Angular 18 con el uso de standalone components.',
         imgUri: 'assets/images/torteliniapp.webp',

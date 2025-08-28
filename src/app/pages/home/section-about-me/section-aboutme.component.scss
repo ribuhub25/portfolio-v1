@@ -1,16 +1,39 @@
 @use "../../../../styles/variables/typography.scss" as typo;
 .container{
-  padding-top: 3vh;
+  //padding-top: 3vh;
+  display: flex;
+  //flex-wrap: wrap;
+  flex-direction: row;
+  gap: 4rem;
+  h4{
+      font-weight: 700;
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+  }
 }
 
-.section {
-    max-width: 1400px; //Mantener el tamaño cuando Aumenta/Disminuye 
-    margin: 0 auto; //Centrar Contenido
-    align-items: center; //Alinear Items dentro
-    padding-top: 3vh;
-    &__title {
-      padding-bottom: 3vh;
-      font-size: xx-large;
-      font-family: typo.$main-family-extrabold;
+.presentation {
+    position: relative;
+    background-position: center center;
+    h1{
+        font-size: 3rem;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        text-align: center;
+        font-weight: 800;
+        padding-bottom: 3rem;
+    }
+    &__content{
+        padding: 10rem 0 17rem 0;
+        max-width: 90rem;
+        width: 92%;
+        margin: auto;
+    }
+    &__info{
+        p{
+            font-size: 1.2rem;
+            width: 100%;
+            line-height: 1.6;
+        }
     }
 }
