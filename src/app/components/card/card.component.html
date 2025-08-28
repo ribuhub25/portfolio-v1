@@ -4,22 +4,22 @@
       <mat-card-content>
         <mat-card-header>
           <div class="div-card-header">
+            @if( isProject(value)) {
             <div>
-              @if (value.imgUri !== "assets/images/perfil.jpg") {
               <mat-card-title>{{ value.title }}</mat-card-title>
-              }
             </div>
             <div class="div-tags">
               @for (tag of value.tags; track $index) {
               <mat-card-subtitle class="tag">{{ tag }}</mat-card-subtitle>
               }
             </div>
+            }
             <p>
               {{ value.description }}
             </p>
           </div>
         </mat-card-header>
-        @if(value.imgUri !== "assets/images/perfil.jpg") {
+        @if(isProject(value)) {
         <mat-card-actions>
           <a mat-button href={{value.githubUri}} target="_blank">CODE</a>
           <a mat-button href={{value.projectUri}} target="_blank">PREVIEW</a>
@@ -28,24 +28,14 @@
       </mat-card-content>
     </div>
     <div class="div-img">
-      @if (value.imgUri !== "assets/images/perfil.jpg") {
-      <a href="/projects/{{value.title.replace(' ','_').toLocaleLowerCase()}}">
-        <img
-        mat-card-image
-        src="{{ value.imgUri }}"
-        alt="{{ value.title }}"
-        class="div-img__project"
-        style="width: 100%; height: auto;display: block;"
-      />
+      @if (isProject(value)) {
+      <a [routerLink]="['/projects', value.title.replace(' ','_').toLocaleLowerCase()]" [state]="{data: value}">
+        <img mat-card-image src="{{ value.imgUri }}" alt="{{ value.title }}" class="div-img__project"
+          style="width: 100%; height: auto;display: block;" />
       </a>
       }@else {
-      <img
-        mat-card-image
-        src="{{ value.imgUri }}"  
-        alt="{{ value.title }}"
-        class="div-img__foto"
-        style="width: 60%; height: auto;display: block;"
-      />
+      <img mat-card-image src="{{ value.imgUri }}" alt="{{ value.title }}" class="div-img__foto"
+        style="width: 60%; height: auto;display: block;" />
       }
     </div>
   </div>

@@ -1,3 +1,32 @@
+.header__logo-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: color .3s;
+}
+.header__logo-img-cont {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 1.2rem;
+}
+.header__logo-sub {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.header__logo-img {
+    width: 4rem;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+    display: block;
+    border-radius: 20px;
+
+}
+
 .mat-toolbar{
   margin-bottom: 30px;
   position: fixed;
@@ -9,6 +38,18 @@
   gap: 20px;
   background-color: var(--color-bg-nav);
   color: var(--color-text-navlink);
+}
+.nav-link{
+  padding: 0.6rem 0.3rem;
+  display: inline-block;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  transition: color .3s;
+}
+.nav-spacer {
+  flex: 1 1 auto;
 }
 @media screen and (max-width: 767px) {
   .mat-toolbar {
