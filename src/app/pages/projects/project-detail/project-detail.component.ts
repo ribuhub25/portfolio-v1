@@ -1,5 +1,4 @@
-import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
-import { NavbarComponent } from "../../../components/navbar/navbar.component";
+import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import {MatChipsModule} from '@angular/material/chips';
 import { IProject } from '../../../models/project';
@@ -9,7 +8,7 @@ import { ViewportScroller } from '@angular/common';
 @Component({
   selector: 'app-project-detail',
   standalone: true,
-  imports: [NavbarComponent, MatButtonModule, MatChipsModule, RouterLink],
+  imports: [MatButtonModule, MatChipsModule, RouterLink],
   templateUrl: './project-detail.component.html',
   styleUrl: './project-detail.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -29,5 +28,4 @@ export class ProjectDetailComponent {
     this.project = nav?.extras.state?.['data'];
     viewportScroller.scrollToPosition([0,0]);
   }
-
 }

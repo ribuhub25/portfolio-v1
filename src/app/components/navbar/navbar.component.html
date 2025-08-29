@@ -5,7 +5,7 @@
         <img src="assets/images/perfil.jpg" alt="Jhonatan Riquelme Logo Image" class="header__logo-img">
       </div>
       <span class="header__logo-sub">Jhonatan Riquelme</span>
-  </div>
+    </div>
   </a>
   <span class="nav-spacer"></span>
   <li class="nav-item">
@@ -17,18 +17,58 @@
   <li class="nav-item">
     <a class="nav-link" href="mailto:jhonatanribu25@gmail.com">Contacto</a>
   </li>
-  <a matButton="outlined" class="nav-link" target="_blank" href="assets/files/cv.pdf" rel="noopener noreferrer">Descargar CV</a>
+  <a matButton="outlined" class="nav-link" target="_blank" href="assets/files/cv.pdf"
+    rel="noopener noreferrer">Descargar CV</a>
   <li class="nav-item">
     <a class="nav-link">
-      <mat-icon
-      aria-hidden="true"
-      aria-label="dark_mode"
-      fontIcon="dark_mode"
-      (click)="toggleDarkTheme()"
-      style="margin-top: 0.5vh; margin-left: 0.5vh;"
-    >
-    dark_mode
-    </mat-icon>
+      <mat-icon aria-hidden="true" aria-label="dark_mode" fontIcon="dark_mode" (click)="toggleDarkTheme()"
+        style="margin-top: 0.5vh; margin-left: 0.5vh;">
+        dark_mode
+      </mat-icon>
     </a>
   </li>
+  <button mat-icon-button class="btn-hamburguer" [matMenuTriggerFor]="navbar">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <mat-menu #navbar="matMenu" xPosition="before">
+    <button mat-menu-item [routerLink]="['/']">
+      <mat-icon>home</mat-icon>
+      <span>Inicio</span>
+    </button>
+    @if(ocultarItem){
+      <button mat-menu-item [matMenuTriggerFor]="projectsMenu">
+        <mat-icon>folder</mat-icon>
+        <span>Proyectos</span>
+      </button>
+    }@else{
+      <button mat-menu-item [routerLink]="['/projects']">
+        <mat-icon>folder</mat-icon>
+        <span>Proyectos</span>
+      </button> 
+    }
+    <button mat-menu-item href="mailto:jhonatanribu25@gmail.com">
+      <mat-icon>email</mat-icon>
+      <span>Contacto</span>
+    </button>
+    <a mat-menu-item target="_blank" href="assets/files/cv.pdf" rel="noopener noreferrer">
+      <mat-icon>download</mat-icon>
+      <span>Descargar CV</span>
+    </a>
+    <a mat-menu-item (click)="toggleDarkTheme()">
+      <mat-icon aria-hidden="true" aria-label="dark_mode" fontIcon="dark_mode" 
+        style="margin-top: 0.5vh; margin-left: 0.5vh;">
+        dark_mode
+      </mat-icon>
+      <span>Cambiar Tema</span>
+    </a>
+  </mat-menu>
+  <mat-menu #projectsMenu="matMenu">
+      @for(project of projects; track $index) {
+      <a mat-menu-item [routerLink]="['/projects', project.title.replace(' ','_').toLocaleLowerCase()]"
+        [state]="{data: project}">
+        <mat-icon>code</mat-icon>
+        <span>{{project.title.toLocaleLowerCase()}}</span>
+      </a>
+      }
+  </mat-menu>
 </mat-toolbar>

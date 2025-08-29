@@ -7,7 +7,7 @@
 .header__logo-img-cont {
     width: 2.5rem;
     height: 2.5rem;
-    margin-right: 1.2rem;
+    margin-right: 0.2rem;
 }
 .header__logo-sub {
     font-size: 0.8rem;
@@ -51,8 +51,18 @@
 .nav-spacer {
   flex: 1 1 auto;
 }
+.btn-hamburguer{
+  display: none;
+}
+
 @media screen and (max-width: 767px) {
   .mat-toolbar {
     font-size: xx-small;
+  }
+  .btn-hamburguer {
+    display: block;
+  }
+  .nav-link{
+    display: none;
   }
 }

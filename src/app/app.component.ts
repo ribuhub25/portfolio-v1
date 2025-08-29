@@ -1,8 +1,9 @@
-import { Component, ChangeDetectionStrategy } from '@angular/core';
+import { Component, ChangeDetectionStrategy, OnInit } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { RouterModule, RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { NavbarComponent } from "./components/navbar/navbar.component";
 import { FooterComponent } from "./components/footer/footer.component";
 @Component({
   selector: 'app-root',
@@ -13,13 +14,16 @@ import { FooterComponent } from "./components/footer/footer.component";
     CommonModule,
     RouterOutlet,
     RouterModule,
+    NavbarComponent,
+    FooterComponent
 ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class AppComponent {
+export class AppComponent{
   title = 'portfolio';
   url = '/assets/icons/merge.svg';
   // currentTheme = document.documentElement.attributes.item(1)?.value;
+
 }
