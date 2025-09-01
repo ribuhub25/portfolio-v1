@@ -1,12 +1,5 @@
-<div class="section" id="proyectos">
-  <section class="presentation">
-    <div class="presentation__content">
-      <h1>Proyectos</h1>
-      <div class="presentation__info">
-        @for (project of LIST_PROJECTS; track $index) {
-        <app-card [value]="project" />
-        }
-      </div>
-    </div>
-  </section>
-</div>
+<section-container [title]="'Proyectos'">
+  @for (project of LIST_PROJECTS; track $index) {
+  <app-card [value]="project" />
+  }
+</section-container>

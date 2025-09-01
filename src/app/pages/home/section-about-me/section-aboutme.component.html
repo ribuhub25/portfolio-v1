@@ -1,20 +1,15 @@
-<section class="presentation" id="sobre-mi">
-  <div class="presentation__content">
-    <h1>Sobre mí</h1>
-    <div class="presentation__info">
-      <div class="container">
-        <div>
-          <h4>Conóceme</h4>
-          <p>{{ infoPersonal.description }}</p>
-          <a href="/" mat-flat-button target="_blank">CONTÁCTAME</a>
-        </div>
-        <div>
-          <h4>Mis Skills</h4>
-          @for(skill of infoPersonal.skills; track $index ){
-          <mat-chip style="margin: 5px 5px;">{{ skill }}</mat-chip>
-          }
-        </div>
-      </div>
+<section-container [title]="'Sobre mí'">
+  <div class="container">
+    <div>
+      <h4>Conóceme</h4>
+      <p>{{ infoPersonal.description }}</p>
+      <a href="/" mat-flat-button target="_blank">CONTÁCTAME</a>
+    </div>
+    <div>
+      <h4>Mis Skills</h4>
+      @for(skill of infoPersonal.skills; track $index ){
+      <mat-chip style="margin: 5px 5px;">{{ skill }}</mat-chip>
+      }
     </div>
   </div>
-</section>
+</section-container>

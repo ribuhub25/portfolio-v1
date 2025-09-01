@@ -9,7 +9,7 @@
         font-weight: 950;
     }
     &__content{
-        padding: 10rem 0 10rem 0;
+        padding: 10rem 0 12rem 0;
         max-width: 90rem;
         width: 92%;
         margin: auto;
@@ -46,8 +46,14 @@
         &__img{
             width: 100%;
             margin-bottom: 4rem;
+            text-align: -webkit-center;
             img{
-                width: 100%;
+              width: 100%;
+              height: auto;
+              object-fit: cover;
+              //aspect-ratio: 5 / 7; /* Opcional: mantiene proporción */
+              max-width: 600px;    /* Controla el tamaño máximo */
+              display: block;
             }
         }
         &__main{

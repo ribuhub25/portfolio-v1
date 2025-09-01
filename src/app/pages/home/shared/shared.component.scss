@@ -1,0 +1,29 @@
+.presentation {
+    position: relative;
+    background-position: center center;
+    h1{
+        font-size: 2rem;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        text-align: center;
+        font-weight: 800;
+        padding-bottom: 4rem;
+    }
+    &__content {
+      padding: 5rem 0 0 0;
+      max-width: 90rem;
+      width: 92%;
+      margin: auto;
+    }
+    
+    &__info {
+      text-align: center;
+
+      p {
+        font-size: 1.2rem;
+        text-align: center;
+        width: 100%;
+        line-height: 1.6;
+      }
+    }
+  }

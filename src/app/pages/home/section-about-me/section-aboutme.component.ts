@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { ISobreMi } from '../../../models/sobreMi';
 import { MatChip } from "@angular/material/chips";
 import { MatButtonModule } from '@angular/material/button';
+import { SharedComponent } from "../shared/shared.component";
 
 @Component({
   selector: 'app-section-aboutme',
   standalone: true,
-  imports: [MatChip, MatButtonModule],
+  imports: [MatChip, MatButtonModule, SharedComponent],
   templateUrl: './section-aboutme.component.html',
   styleUrl: './section-aboutme.component.scss',
 })
