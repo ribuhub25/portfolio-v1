@@ -9,7 +9,7 @@
         font-weight: 950;
     }
     &__content{
-        padding: 10rem 0 12rem 0;
+        padding: 14rem 0 15rem 0;
         max-width: 90rem;
         width: 92%;
         margin: auto;
@@ -52,7 +52,7 @@
               height: auto;
               object-fit: cover;
               //aspect-ratio: 5 / 7; /* Opcional: mantiene proporción */
-              max-width: 600px;    /* Controla el tamaño máximo */
+              max-width: 800px;    /* Controla el tamaño máximo */
               display: block;
             }
         }
@@ -76,7 +76,7 @@
             &__tools{
                 margin: 0 0 4rem 0;
                 h2{
-                    font-weight: 700;   
+                    font-weight: 700;
                     font-size: 1.5rem;
                     margin-bottom: 2rem;
                 }
@@ -84,12 +84,12 @@
             &__links{
                 margin: 0 0;
                 h2{
-                    font-weight: 700;   
+                    font-weight: 700;
                     font-size: 1.5rem;
                     margin-bottom: 2rem;
                 }
             }
         }
-        
+
     }
 }
