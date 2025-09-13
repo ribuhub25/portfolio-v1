@@ -10,7 +10,7 @@ import { MatCardModule } from '@angular/material/card';
   styleUrl: './section-presentation.component.scss'
 })
 export class SectionPresentationComponent {
-  years_experience : number = 3 
+  years_experience : number = 1
   grade : string = "Egresado"
   career : string = "Ingeniería de Sistemas"
   university : string = "Universidad Nacional de Ingeniería"
